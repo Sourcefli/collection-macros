@@ -24,7 +24,7 @@ class CollectionMacrosServiceProvider extends ServiceProvider
     {
         return [
             'randomOrFirst' => \Sourcefli\CollectionMacros\Macros\RandomOrFirst::class,
-            'modelRelations' => \Sourcefli\CollectionMacros\Macros\ModelRelations::class
+            'modelRelationsMap' => \Sourcefli\CollectionMacros\Macros\ModelRelationsMap::class
         ];
     }
 
@@ -36,18 +36,5 @@ class CollectionMacrosServiceProvider extends ServiceProvider
     public function provides()
     {
         return ['collection-macros'];
-    }
-
-    /**
-     * Console-specific booting.
-     *
-     * @return void
-     */
-    protected function bootForConsole(): void
-    {
-        // Publishing the configuration file.
-        $this->publishes([
-            __DIR__ . '/../config/collection-macros.php' => config_path('collection-macros.php'),
-        ], 'collection-macros.config');
     }
 }

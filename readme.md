@@ -1,5 +1,8 @@
 # CollectionMacros
 
+###Note: 
+**Im going to move this repo to a 'Laravel Macros' repo, vs just 'Collection' macros.**
+
 A list of macros I keep reusing. Packinging them up for easier usage.
 
 ## Installation

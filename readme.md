@@ -1,6 +1,5 @@
 # CollectionMacros
 
-
 A list of macros I keep reusing. Packinging them up for easier usage.
 
 ## Installation

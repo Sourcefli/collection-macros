@@ -41,7 +41,7 @@ class CollectionMacrosServiceProvider extends ServiceProvider
     {
         return [
             'randomOrFirst' => \Sourcefli\CollectionMacros\Macros\RandomOrFirst::class,
-            'modelRelationships' => \Sourcefli\CollectionMacros\Macros\ModelRelationships::class
+            'modelRelations' => \Sourcefli\CollectionMacros\Macros\ModelRelations::class
         ];
     }
 

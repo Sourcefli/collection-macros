@@ -23,11 +23,7 @@ class RandomOrFirst
          */
         return function (?int $totalItems = null) {
             /** @var Collection $this */
-
-            if (!$this->count()) {
-                return $this;
-            }
-
+            if (!$this->count()) return $this;
             return $totalItems && $this->count() >= $totalItems
                 ? $this->random($totalItems)
                 : ($this->count() === 1

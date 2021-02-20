@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @return mixed
  */
-class RelationshipMap
+class ModelRelationsMap
 {
     public function __invoke()
     {
